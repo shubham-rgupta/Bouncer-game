@@ -34,7 +34,7 @@ public class red : MonoBehaviour
         c++;
         if(c==2){
         jumping = true;}
-        }
+            }
         }
 	}
     void OnCollisionEnter2D(Collision2D other)
