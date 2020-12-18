@@ -5,33 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class red : MonoBehaviour
 {
-    // Vector3 characterScale;
-    // float characterScaleX;
+
     public bool Left;
     private float speed = 13f;
     private bool jumping;
     private float jumpf = 35f;
     private int c = 0;
 
-    void Start()
-    {
-        // characterScale = transform.localScale;
-        // characterScaleX = characterScale.x;
-    }
 
     void Update()
     {
         Jump();
 
         if(Left){
-            //characterScale.x = -characterScaleX;
             transform.Translate(speed *Time.deltaTime, 0f, 0f);
         }
         else{
-            //characterScale.x = characterScaleX;
             transform.Translate(-speed *Time.deltaTime, 0f, 0f);
         }
-        //transform.localScale = characterScale;
     }
 
     void Jump()
